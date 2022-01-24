@@ -1,0 +1,136 @@
+%mock exam for NST 1A math
+\documentclass[10pt]{iopart}
+\usepackage{multicol}
+\usepackage[left=3.0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{alltt}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{iopams}
+\usepackage[T1]{fontenc}
+\pagestyle{empty}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\begin{document}
+\title{Mock NST 1A math paper: things done in Michaelmas\\ \vspace{1cm} \large 14:00-16:00, Wednesday 17\textsuperscript{th} January 2018}
+\vspace{2cm}
+\begin{itemize}
+\item	Try \textbf{all} the problems in \textbf{Section A} and any \textbf{three} problems in \textbf{Section B}. 
+\item	About $1/4$ of the marks are in \textbf{Section A}, $3/4$ in \textbf{Section B}. 
+\item	There are no other guidelines for mark distributions.
+\item	Don't bother with a calculator.
+\item	Problems recommended for the B-course folks have a star, (*).
+\end{itemize}
+\maketitle
+\section*{Section A}\label{sa}
+
+Try \textbf{all} of these in about 1/2 hour.
+\begin{enumerate}[label=A\arabic*)]
+\item	Use the Cauchy-Schwarz inequality to show that
+\begin{eqnarray}
+\int_{-\infty}^{\infty}\left[\cosh(\theta)\left(1+\theta^2\right)^{3/4}\right]^{-1}\mathrm{d}\theta\leq 2.
+\end{eqnarray}
+\item	Three planes are defined by the equations
+\begin{eqnarray}
+x+y-2z=12,\\
+2x-2y+z=1, \\
+3x+y+z=7.
+\end{eqnarray}  
+Find the volume of the parallelepiped of side lengths $2$, $3$ and $5$, which exactly occupies one of the corners of their point of intersection.
+\item	The region $\Gamma_\xi$ in the $x-y$ plane is bounded by the lines $y=f_\xi(x)$, $x=b_\xi$ and $y=a_\xi$, where $f_\xi(x)$ is a monotonically decreasing function of $x$ for all values of the parameter $\xi$ (in this problem the $\xi$-subscript indicates implicit dependence on $\xi$). By considering the $\xi$-dependence of the double integral of some function $g_\xi(x,y)$ over this region,
+\begin{eqnarray}
+I_\xi=\int_{\Gamma_\xi}g_\xi(x,y)\mathrm{d}x\mathrm{d}y,
+\end{eqnarray}
+show that,
+\begin{eqnarray}
+\int_{b_\xi}^{f^{-1}_\xi(a_\xi)}g_\xi(u,f_\xi(u))\frac{\partial}{\partial\xi}f_\xi(u)\mathrm{d}u=\int_{a_\xi}^{f_\xi(b_\xi)}g_\xi(f^{-1}_\xi(u),u)\frac{\partial}{\partial\xi}f^{-1}_\xi(u)\mathrm{d}u.
+\end{eqnarray}
+\item	Show that
+\begin{eqnarray}
+8e^{i\pi/4}\int_{0}^{\infty}\theta^5\left[e^{i\pi/4}\sin\left(i\sqrt[3]{\pi}\theta^4\right)+e^{-i\pi/4}\cos\left(i\sqrt[3]{\pi}\theta^4\right)\right]\mathrm{d}\theta=1.
+\end{eqnarray}
+\item	Show that the number of \textit{disconnected} loci of $\mathbf{x}$ simultaneously satisfying \textit{both} constraints,
+\begin{eqnarray}
+|\mathbf{x}\times\hat{\mathbf{n}}|=\chi|\mathbf{x}|,\\ |\mathbf{x}-\lambda\hat{\mathbf{n}}|=\psi,
+\end{eqnarray}
+is two when $|\lambda|<\psi/\chi$, one when $|\lambda|=\psi/\chi$ and zero otherwise, where $\chi$ and $\psi$ are constant scalars and $\hat{\mathbf{n}}$ is a constant unit vector\footnote{Note that a locus can be a region of any dimension from $0$ to $3$.}.
+\item	Primed and unprimed coordinates for a three-dimensional Euclidean space are related by
+\begin{eqnarray}
+\eqalign{
+x_0=\cosh(\psi)x'_0-\sinh(\psi)x'_1,\\
+x_1=\cosh(\psi)x'_1-\sinh(\psi)x'_0,\\
+x_2=x'_2,
+}
+\end{eqnarray}
+where $\psi$ is a parameter. Find the normalized basis vectors $\{\mathbf{e}'_i\}$ in terms of the Cartesian basis vectors $\{\mathbf{e}_i\}$ and verify that orthogonality has only been lost between the $x'_0$ and $x'_1$ coordinates. Find the reciprocal basis set $\{\mathbf{E}'_i\}$ in terms of the $\{\mathbf{e}_i\}$.
+\end{enumerate}
+\item   Define the terms \emph{continuity} and \emph{differentiability} in relation to a function of a real variable. A function is given by
+\begin{eqnarray}
+		f(x) &= \exp\bigg(\frac{-1}{x}\bigg) & &x >0 \\
+		f(x) &= 0 & &\mathrm{otherwise.}
+\end{eqnarray}
+Determine whether $f$ is continuous and differentiable at the origin, and give a sketch of the function's graph.
+\item   Find the real and imaginary parts of the square roots of the complex number $1-\sqrt{3}i$.
+
+
+\section*{Section B}\label{sb}
+Try any \textbf{three} of these, about 1/2 hour each.
+\begin{enumerate}[label=B\arabic*)]
+\item	The path $P$ is made up from an infinite series of steps. The $n$th step involves travelling a distance $l_n=l_0\varepsilon^n/n$ in a straight line and then taking a left turn through an angle $\theta$, so that $\varepsilon$ and $\theta$ are dimensionless constants and $l_0$ has dimensions of length. 
+
+\hfill\break
+Sketch the first four steps of the path $\varepsilon=1/2$ and $\theta=\pi/4$, beginning at $n=1$.
+
+\hfill\break
+Show that the series
+\begin{eqnarray}
+S^{N}(\varepsilon)=\sum_{n=1}^{N}\frac{\varepsilon^n}{n}, \quad \varepsilon\in\mathbb{R}
+\end{eqnarray}
+is convergent for $|\varepsilon|<1$ but divergent for $|\varepsilon|>1$, and that convergence for $-1<\varepsilon<0$ is absolute.
+
+\hfill\break
+Show further, with reference to definite integrals of the form $\int_{x_1}^{x_2}\mathrm{d}x/x$, that $S^N(\varepsilon)$ is divergent at $\varepsilon=1$ and conditionally convergent at $\varepsilon=-1$.
+
+\hfill\break
+Hence and by means of differentiation also, show that the Taylor series for the real natural logarithm of $x\in\mathbb{R}$ and its range of validity are
+\begin{eqnarray}\label{one}
+\ln(x)=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}(x-1)^n}{n}, \quad -1<x-1\leq 1.
+\end{eqnarray}
+
+\hfill\break
+Given that in \eref{one} the series expansion (known as the Newton-Mercator series) is also valid for the particular natural logarithm of $x\in\mathbb{C}$ for which $\pi>\mathfrak{I}[\ln(x)]>-\pi$, with the range $|x-1|\leq1$ and $x\neq 2$, show that a traveller on $P$ with $\varepsilon=1$ and $\theta=\pi/4$ must travel infinitely far but will eventually find herself a finite distance,
+\begin{eqnarray}
+l=l_0\sqrt{\left[\frac{1}{2}\ln\left(2-\sqrt{2}\right)\right]^2+\left[\arctan\left(\frac{1}{1-\sqrt{2}}\right)\right]^2},
+\end{eqnarray}
+from her starting point.
+\item   A continuous random variable $X$ has the probability distribution function
+\begin{eqnarray}
+		f(x) &= \frac{A}{\sqrt{1+k^{2}x^{2}}} & &0\leq x\leq k^{-1} \\
+		f(x) &= 0 & &\mathrm{otherwise,}
+\end{eqnarray}
+with $k$ a positive constant and $A$ a normalisation factor. Find the expectation value of $X$ in terms of $k$.
+
+\hfill\break
+A random variable $Y$ can take the value $-1$ or any non-negative value, according to
+\begin{eqnarray}
+	\mathrm{P}\left(Y = -1\right)=m; \qquad \mathrm{P}\left(0\leq Y\leq y\right) = \frac{1-e^{-y}}{2},
+\end{eqnarray}
+where $m$ is a constant. Find:
+\begin{enumerate}[label=(\roman*)]
+\item the value of $m$;
+\item the mean of $Y$;
+\item the variance of $Y$;
+\item the probability that $Y\geq 1$ given that $Y\geq 0$.
+\end{enumerate}
+
+
+
+\item
+\item
+\item
+\end{enumerate}
+\end{document}

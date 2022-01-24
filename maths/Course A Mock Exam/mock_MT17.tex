@@ -1,0 +1,195 @@
+
+% Exam Template for UMTYMP and Math Department courses
+%
+% Using Philip Hirschhorn's exam.cls: http://www-math.mit.edu/~psh/#ExamCls
+%
+% run pdflatex on a finished exam at least three times to do the grading table on front page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\tripos}{Natural Sciences Tripos Part 1A}
+\newcommand{\term}{Lent Term 2018}
+\newcommand{\exam}{Course A Mathematics Mock Exam}
+\newcommand{\timelimit}{2 hours}
+\newcommand{\supervisor}{Nora Martin}
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\exam}{Page \thepage\ of \numpages}{\term}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\tripos} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\exam} &&\\
+\textbf{Time Limit: \timelimit}&&\\
+\textbf{Supervisor: \supervisor}&&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+\hspace{20pt}
+
+Please attempt all questions in Part A and 3 questions in Part B.\\
+
+Good luck!\\
+
+\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+\newpage % End of cover page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% See http://www-math.mit.edu/~psh/#ExamCls for full documentation, but the questions
+% below give an idea of how to write questions [with parts] and have the points
+% tracked automatically on the cover page.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Section A}\label{sa}
+\begin{questions}
+
+\addpoints
+\question[2] Given $\vec{OC} = (1,2,3)$ and $\vec{AC} = (2,−1,−5)$, find an expression for the cosine of the angle between vectors $\vec{OA}$ and $\vec{OC}$.
+
+%Complex Numbers and log
+\addpoints
+\question[4]Evaluate $\ln(\frac{1}{\sqrt{2}} (1+i))$ and show the result on the complex plane.
+
+
+%plotting
+\addpoints
+\question
+\begin{parts}
+\part[2] Calculate the second derivative with respect to x of the real function $y = \sin(\exp x)$.
+\part[3] Sketch the function $y = \sin(\exp x)$ in the range $-\infty < x < \infty$.
+\end{parts}
+
+%claculus
+\addpoints
+\question[6] Find the zeros, the stationary points and the inflection points of $y = x^{3} - 3 x^{2} + 4$
+and state whether the stationary points are maxima or minima. Indicate these points on a graph of the function.
+
+
+
+%Taylor Series question
+\addpoints
+\question
+\begin{parts}
+\part[3] State Taylor's theorem for the expansion about $x =x_{0}$ of a function that is differentiable $n$ times and give an expression for the remainder term $R_{n}$ after $n$ terms.
+\part[5] Give the first three terms of the Taylor Series of $f(x)=\exp(-2 x)$ around $x=0$. What is the $n^{th}$ term of this series?
+\end{parts}
+
+
+
+\section*{Section B}\label{sb}
+%Geometry Question
+\addpoints
+\question Two planes are defined by the equations:\\
+Plane A: $x+y-2z=1$\\
+
+Plane B: $x=2$\\
+\begin{parts}
+\part[4] A third plane, plane C, is defined by two lines. These lines are:
+\begin{equation}
+\vec{x}=\myvec{1\\2\\3}+r \myvec{1\\1\\-4}
+\end{equation}
+\begin{equation}
+\vec{x}=\myvec{5\\-4\\-3}+s \myvec{-2\\3\\3}
+\end{equation}
+Find a coordinate equation of plane C.
+\part[4] Calculate the volume of the parallelepiped of side lengths $2$, $3$ and $5$, which exactly occupies one of the corners of the point of intersection of planes A, B and C.
+\part[4] Find the distance of plane A from the origin. Also find the coordinates of the point at the foot of the perpendicular from the origin to this plane. 
+\end{parts}
+
+%Calculus Question
+\addpoints
+\question Integration:
+\begin{parts}
+\part[2] Evaluate from first principles, by considering elementary areas, the integral:
+\begin{equation}
+\int_{a}^{b}x\ dx
+\end{equation}
+
+\part[4] Evaluate the integral:
+\begin{equation}
+\int_{0}^{\infty} e^{-x}\  sin(2x)\  dx
+\end{equation}
+\part[6] Find a recurrence relation between $I_{n}$ and $I_{n-1}$  for 
+\begin{equation}
+I_{n}=\int_{0}^{\infty} x^{n} e^{-x}\ dx % problem set question
+\end{equation}
+and use it to calculate $I_{n}$ for the case $n = 5$.\\
+\end{parts}
+
+%Complex Number Question
+\addpoints
+\question Complex Numbers I \textit{(adapted from Tripos paper 1, 2002)}:
+\begin{parts}
+\part[5] Let $z=2\exp(i \phi)$ where $0<\phi<\pi/2$. Express $z^{*}$ and $-z$ in the form $r \exp(i \theta)$ where $r > 0$ and $0 < \theta < 2 \pi$. For $\phi=\pi / 4$, sketch the location of $z$, $z^{*}$ and $-z$ in the complex plane.
+\part[3] If $z = 2 \exp(i \phi)$ where $0 < \phi < \pi$, calculate the real and imaginary parts of $w = (z - 2)/(z + 2)$.
+\part[4] Write down formulae for $\cos \theta$ and $\sin \theta$ in terms of complex exponentials. Use
+these to derive formulae for $\cos 2\theta$ and sin $\sin 2\theta$  in terms of $\cos \theta$  and $\sin \theta$ . 
+\end{parts}
+
+%Complex Number Question
+\addpoints
+\question Complex Numbers II \textit{(adapted from Tripos paper 1, 2008)}:
+\begin{parts}
+\part[4] Let $z = x+i\ y$ with $x$ and $y$ real. Find the real and imaginary parts of the following
+in terms of $x$ and $y$: $z \sin (z)$
+\part[3] Find all the roots of the equation $z^{4} - z^{2} -2 = 0$ and plot them in the Argand diagram.
+\part[5] Let the complex numbers $z_{1},z_{2},z_{3}$ and $z_{4}$ represent the vertices of a plane quadrilateral ABCD in the complex plane. Show that ABCD is a parallelogram if $z_{1} - z_{2} + z_{3} - z_{4} = 0$.
+\end{parts}
+
+
+
+%Probability Question
+\addpoints
+\question Probabilities:
+\begin{parts}
+\part[5]   Find the probability that in a group of k people at least two have the same birthday (ignoring 29th February).
+\part[7] The random variable $X$ can take any non-negative value and its \textbf{cumulative} density function is $P(0\leq X \leq x)=k\ (1-\exp(-x)) $, where $k$ is a constant. Find the probability \textbf{density} function for $X$, the value of $k$, and the mean and variance of $X$.
+\end{parts}
+
+
+
+\end{questions}
+\end{document}

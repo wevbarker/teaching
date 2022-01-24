@@ -1,0 +1,91 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2467,         83]
+NotebookOptionsPosition[      2053,         67]
+NotebookOutlinePosition[      2388,         82]
+CellTagsIndexPosition[      2345,         79]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"M", ":=", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"1", ",", "\"\<SolarMass\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"G", ":=", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"1", ",", "\"\<GravitationalConstant\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", ":=", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"1", ",", "\"\<SpeedOfLight\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"R", ":=", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{"1", ",", "\"\<SolarRadius\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"QuantityMagnitude", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"R", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        RowBox[{"2", "*", "M", "*", 
+         RowBox[{"G", "/", 
+          RowBox[{"(", 
+           RowBox[{"R", " ", 
+            RowBox[{"c", "^", "2"}]}], ")"}]}]}]}], ")"}], "^", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}], ")"}]}]}], "-", "R"}], ",", 
+   "\"\<Kilometers\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.758135763255164*^9, 3.758135942775601*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"e9b9dff6-799c-41a9-9839-46d20916430d"],
+
+Cell[BoxData["1.4765997270868691515`4.0315310848063355"], "Output",
+ CellChangeTimes->{{3.758135915020218*^9, 3.758135944036662*^9}},
+ CellLabel->"Out[10]=",ExpressionUUID->"fb006842-ba36-46cd-aba0-0d8326e30660"]
+}, Open  ]]
+},
+WindowSize->{640, 1172},
+WindowMargins->{{640, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1242, 38, 147, "Input",ExpressionUUID->"e9b9dff6-799c-41a9-9839-46d20916430d"],
+Cell[1825, 62, 212, 2, 68, "Output",ExpressionUUID->"fb006842-ba36-46cd-aba0-0d8326e30660"]
+}, Open  ]]
+}
+]
+*)
+

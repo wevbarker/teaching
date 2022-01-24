@@ -1,0 +1,56 @@
+
+\documentclass{article}
+    % General document formatting
+    \usepackage[margin=0.7in]{geometry}
+    \usepackage[parfill]{parskip}
+    \usepackage[utf8]{inputenc}
+    
+    % Related to math
+    \usepackage{amsmath,amssymb,amsfonts,amsthm}
+\title{last minute solutions}
+\begin{document}
+\maketitle
+\section{Part II Relativity}
+Callum I hope this helps, let me know if I have errors.
+\begin{enumerate}
+	\item For example sheet 4(b). In all frames the lowest energy scenario leaves the protons and meson clumped together. In the ZMF the protons fall like $\gamma^2=1/\left( 1-v^2 \right)$ and so
+		\begin{eqnarray} \label{one}
+			m_p \gamma=2m_p+m_\pi.
+\end{eqnarray}
+But we want the lab frame with one of the protons falling like $\gamma_1^2=1/\left( 1- v_1^2\right)$. In the lab frame we have $\overrightarrow{v}_1=\gamma_1\left( 1,\mathbf{v}_1 \right)$ for that proton and $\overrightarrow{v}_2=\left( 1,\mathbf{0} \right)$ for the other. The only way to get to the ZMF is then
+\begin{eqnarray}\label{two}
+	\gamma_1 \left( 1-v_1 v \right)=1.
+\end{eqnarray}
+Then I think you could just solve \eqref{one} and \eqref{two} for $v_1$ and hence the energy.
+\item For 2017 3(b). In the ZMF the deflection is $\phi$ and the speeds are $v_1$ and $v_2$ for $m_1$ and $m_2$, so
+	\begin{eqnarray}\label{three}
+		\gamma_1 m_1=\gamma_2 m_2.
+	\end{eqnarray}
+They obviously want shit to go down along the $x$ direction, so you want a boost of $v_1 \hat{\mathbf{x}}$ to take you to the lab frame. This means that the deflected three-velocity in the lab frame is
+\begin{eqnarray}
+	\mathbf{v}_3=\left( \frac{v_1 \cos\phi+v_2}{1+v_1v_2}, \frac{v_1\sin\phi}{\gamma_2 \left( 1+v_1v_2 \right)},0 \right),
+\end{eqnarray}
+just using the `velocity addition formula' (no such thing). Then use the hint to show the maximum tangent is
+\begin{eqnarray}
+	\tan\theta=\frac{v_1\sin\phi}{\gamma_2 \left( v_1\cos\phi+v_2 \right)}=\frac{v_1}{\gamma_2\sqrt{v_2^2-v_1^2}},
+\end{eqnarray}
+solve $\tan\theta$ for $\sin\theta$ and notice it is $m_2/m_1$ because of \eqref{three}.
+\item The particle is falling away from the black hole of gravitational mass $M$. Lets say $G=c=1$ so the event horizon is $2M$. So if the particle is at escape velocity you could show $a=3M/\sqrt{2}$. The four-velocity of the particle is $\overrightarrow{v}=\left( \dot{t},\dot{r}\hat{\mathbf{r}} \right)$
+	so because the particle is not null you could use $g_{\mu\nu}v^\mu v^\nu=1$ to solve for the time component 
+	\begin{eqnarray}
+		\left( 1-2M/r \right)\dot{t}^2=1+\dot{r}^2/\left( 1-2M/r \right).
+	\end{eqnarray}
+	If you do that you can then use the observer four-velocity $\overrightarrow{u}=\left( 1/\sqrt{1-2M/r},\mathbf{0} \right)$ to get
+	\begin{eqnarray}
+		u_\mu v^\mu=\gamma=\sqrt{\frac{1-2M/r+\dot{r}^2}{1-2M/r}},
+	\end{eqnarray}
+	where $\gamma^2=1/\left( 1-v^2 \right)$ refers to the relative velocity in locally Minkowski coordinates. If you substitute for the original particle you get $v^2=2M/r$, so if you invert time the thing is moving at lightspeed when it crosses the event horizon. This is also true of the particle falling away at $u$ at infinity, but it approaches lightspeed faster because generally
+	\begin{eqnarray}
+		v=\sqrt{u^2+2M\left( 1-u^2 \right)/r}.
+	\end{eqnarray}
+	\end{enumerate}
+	\section{Part 1A NST Maths B}
+	Hi Kit. For the question you mention, first step is clearly to use the orthogonal rotation $\sqrt{2}\chi_1=\theta_1+\theta_2$ and $\sqrt{2}\chi_2=\theta_1-\theta_2$. Then the function takes  a form where it is a sum of functions each of one of the variables. This is a good thing, because there will clearly be overall maxima and minima where \textit{both} functions have maxima and minima. The remaining cases are mixed maxima and minima, so they must correspond to overall saddle points. As to \textit{which} saddle points, this is the time when you have to start thinking -- you can figure it out by drawing the diagram of the known maxima and minima and saddle points of unknown orientation, and staring at it (this is known as the \textit{Feynman algorithm}).
+	\par
+	As for finding the contours analytically. Using the vanishing of one of the first derivatives only works if one of your coordinates is aligned with the contour. Coordinates are human inventions and have no meaning (you'll get more of this in Part II). The coordinates of a function $f(x,y)$ have tangent vector $\mathbf{t}\cdot\nabla f=0$, so you would need to find the integrals of that equation. Generally useless, very time consuming.
+	\end{document}
